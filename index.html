@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--Library for zoom in images-->
+    <link href="https://cdn.jsdelivr.net/npm/zoom-vanilla.js/dist/zoom.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/reset.css">
+</head>
+<body>
+<div class="page">
+    <header class="header">
+        <div class="wrapper">
+            <div class="header__content">
+                <aside class="header__aside">
+                    <span class="header-text header__text--name">Никита Возный</span>
+                </aside>
+                <nav class="header__nav nav">
+                    <a href="#diagnosis" class="header-text nav__item">Диагноз</a>
+                    <a href="#chronology" class="header-text nav__item">Хронология</a>
+                    <a href="#payment" class="header-text nav__item">Реквизиты</a>
+                    <a href="#contacts" class="header-text nav__item">Контактная информация</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main class="content">
+        <div class="greeting">
+            <div class="greeting__content">
+                <section class="greeting__section greeting-info">
+                    <div class="greeting-info__content">
+                        <h2 class="title-text greeting-info__title">Помогите спасти жизнь ребенку</h2>
+                        <div class="greeting-info__text-wrapper">
+                            <p class="text greeting-info__text">Его зовут Никита,</p>
+                            <p class="text greeting-info__text">ему недавно исполнилось 7 лет...</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="greeting__section greeting-image"></section>
+            </div>
+        </div>
+        <div class="content__block medical-info">
+            <div class="wrapper">
+                <div class="medical-info__content">
+                    <a name="diagnosis">
+                        <div class="medical-info__section diagnosis">
+                            <h2 class="title-text diagnosis__title">Диагноз</h2>
+                            <div class="diagnosis__description">
+                                <div class="diagnosis__text-wrapper">
+                                    <p class="text diagnosis__text">
+                                        До 15 августа 2021 года ребенок жил совершенно обычной жизнью: ходил в школу, проводил время с друзьями, строил планы, вредничал и баловался ,как все дети, по - детски получал
+                                        удовольствие от жизни.
+                                    </p>
+                                    <p class="text diagnosis__text">Но, неожиданно для всех нас, в его жизнь пришла беда!!</p>
+                                </div>
+                                <aside class="medical-info__aside caption-info">
+                                    <span class="caption-text caption-info__text caption-info__text--dark">18 августа 2021</span>
+                                    <span class="caption-text caption-info__text caption-info__text--shifted">, после срочного удаления обширной опухоли головного мозга с кровоизлиянием, ребенку поставили</span>
+                                    <span class="caption-text caption-info__text caption-info__text--dark">диагноз Метастаза меланомы</span>
+                                </aside>
+                                <div class="diagnosis__text-wrapper">
+                                    <p class="text diagnosis__text">
+                                        Для нас это было большим и страшным ударом, ведь ещё вчера наш Никитка был полностью здоров! Очень сложно осознавать и принимать такое будущее для нашего Сына.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a name="chronology">
+                        <div class="medical-info__section chronology">
+                            <h2 class="title-text chronology__title">Хронология</h2>
+                            <ul class="content__wrapper chronology__events">
+                                <li class="chronology__event event">
+                                    <div class="event__title-wrapper">
+                                        <p class="caption-text event__number">1.</p>
+                                        <p class="caption-text event__title">Дата</p>
+                                        <p class="caption-text event__title">первый диагноз</p>
+                                    </div>
+                                    <div class="event__info">
+                                        <img src="./images/first_diagnosis.jpg" alt="First diagnosis" srcset="./images/first_diagnosis@2x.jpg 2x" class="event__image" data-action="zoom">
+                                        <span class="text event__text">
+                                            После срочного удаления (18 августа 2021 года) большой опухоли головного мозга с кровоизлиянием, ребенку поставили диагноз! - анапластическая астроцитома 3 степени.
+                                        </span>
+                                        <p class="text event__text text--separated">
+                                            Сейчас отсчет пошел на минуты: в течение недели Никите необходимо начинать лечение по протоколу за рубежом. Это стоит огромных денег. И это непосильная сумма
+                                            для семьи.
+                                        </p>
+                                        <div class="event__help help">
+                                            <h4 class="text text--separated help__title">Вы можете помочь:</h4>
+                                            <ul class="help__actions">
+                                                <li class="text help__action">
+                                                    распространить информацию, просто сделав репост со страницы мамы;
+                                                </li>
+                                                <li class="text help__action">
+                                                    сделать репосты следующих сообщений с розыгрышами и аукционами;
+                                                </li>
+                                                <li class="text help__action">
+                                                    отметить людей, которые могут помочь финансово или распространять информацию в комментариях;
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="chronology__event event">
+                                    <div class="event__title-wrapper">
+                                        <p class="caption-text event__number">2.</p>
+                                        <p class="caption-text event__title">Дата</p>
+                                        <p class="caption-text event__title">счет в больнице</p>
+                                    </div>
+                                    <div class="event__info">
+                                        <img src="./images/firs_bill.jpg" alt="First bill" srcset="./images/first_bill@2x.jpg 2x" class="event__image" data-action="zoom">
+                                        <span class="text event__text">
+                                            Мы прилетели в Турцию на обследование и сдали биоматериал для исследования.Нам сделали Мрт, ПЭТ обследование всего тела. Спасиба Богу метастаз во внутренних органах не обнаружили. Болезнь поразила Центральную нервную систему.
+                                        </span>
+                                        <p class="text event__text text--separated">
+                                            Гистология Германии поставила диагноз – злокачественная опухоль (Метастаз Меланомы). Редкое заболевание у детей 1 случай на 1000000.
+                                            Нам назначили курс радиотерапии и химию.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="chronology__event event">
+                                    <div class="event__title-wrapper">
+                                        <p class="caption-text event__number">3.</p>
+                                        <p class="caption-text event__title">Дата</p>
+                                        <p class="caption-text event__title">счет в больнице</p>
+                                    </div>
+                                    <div class="event__info">
+                                        <img src="./images/second_bill.jpg" alt="Second bill" srcset="./images/second_bill@2x.jpg 2x" class="event__image" data-action="zoom">
+                                        <span class="text event__text">
+                                            Вчера мы получили результат гистологии из Германии (4 гистология). Мы очень надеялись и верили, что они опровергнут страшный диагноз Турции.Но увы, Германия подтвердила диагноз, МЕТАСТАЗА МЕЛАНОМЫ!!!
+                                        </span>
+                                        <p class="text event__text text--separated">
+                                            Редчайшее заболевание у детей (1 на 1000000), поскольку это болезнь взрослых людей.
+                                        </p>
+                                        <p class="text event__text text--separated">
+                                            Сейчас мы проходим курс радиотерапии и химии. Но Никитушке стало хуже, четвёртый день температура 39-39.5. Радиотерапию приостановили, сдаем анализы и проходим обследование.
+                                            Очень больно и страшно смотреть на своего ребенка, который старается держаться, чтоб не пугать свою маму.
+                                        </p>
+                                        <p class="text event__text text--separated">
+                                            Благодарю всех и каждого, кто был рядом с нами, морально и материально.
+                                        </p>
+                                        <p class="text event__text text--separated">
+                                            Спасибо вам!
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="chronology__event event">
+                                    <div class="event__title-wrapper">
+                                        <p class="caption-text event__number">4.</p>
+                                        <p class="caption-text event__title">Дата</p>
+                                        <p class="caption-text event__title">счет в больнице</p>
+                                    </div>
+                                    <div class="event__info">
+                                        <img src="./images/hospital_photo.jpg" alt="Hospital photo" srcset="./images/hospital_photo@2x.jpg 2x" class="event__image" data-action="zoom">
+                                        <span class="text event__text">
+                                            Никитка продолжает свое лечение в стационаре клиники Memorial.Только что, нам выставили счет за 6 дней стационара и лечение.️Сумма составила 78686 лир.Это где-то 265 000,00 грн️В каком состоянии я сейчас нахожусь…
+                                        </span>
+                                        <img src="./images/third_bill.jpg" alt="Third photo" srcset="./images/third_bill@2x.jpg 2x" class="event__image" data-action="zoom">
+                                        <p class="text event__text text--separated">
+                                            Спасибо всем добрым и отзывчивым людям за помощь, репосты, молитвы. Здоровья Вам и вашим родным!
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="chronology__event event">
+                                    <div class="event__title-wrapper">
+                                        <p class="caption-text event__number">5.</p>
+                                        <p class="caption-text event__title">Дата</p>
+                                        <p class="caption-text event__title">счет в больнице</p>
+                                    </div>
+                                    <div class="event__info">
+                                        <span class="text event__text">
+                                            Друзья, снова нужна Ваша помощь!!! Мы продолжаем лечение, но опять у Никитушки поднялась температура ...
+                                        </span>
+                                        <p class="text event__text">
+                                            и анализы крови плохие. И нам продолжили стационар.
+                                        </p>
+                                        <p class="text event__text text--separated">
+                                            И снова требуется переливание крови! Срочно ищу донора. А это здесь, в Турции, не просто и невероятно дорого ... Молю Господа о милости и умоляю Вас о помощи!
+                                        </p>
+                                        <p class="text event__text text--separated">
+                                            Наши финансовые запасы заканчивается, поэтому каждая гривна, направленная Вами мне на счет, может спасти жизнь нашему сыну!
+                                        </p>
+                                        <p class="text event__text text--separated">
+                                            Мне страшно не только за жизнь и здоровье моего сына, но и за новый счет который выставит нам клиника, поскольку цены здесь невероятно дорогие. $$$
+                                        </p>
+                                        <p class="text event__text text--separated">
+                                            Спасибо вам!
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="content__block payment-info">
+            <div class="wrapper">
+                <a name="payment">
+                    <div class="payment-info__content">
+                        <h2 class="title-text payment-info__title">Реквизиты</h2>
+                        <div class="content__wrapper payment-info__data">
+                            <div class="cards-info">
+                                <ul class="cards-info__list">
+                                    <li class="cards-info__item card-info">
+                                        <p class="text payment-info__text card-info__info">Карта Monobank, грн</p>
+                                        <p class="caption-text text--bold payment-info__text card-info__number">4441-1144-6230-7800</p>
+                                    </li>
+                                    <li class="cards-info__item card-info">
+                                        <p class="text payment-info__text card-info__info">Карта ПриватБанк, $</p>
+                                        <p class="caption-text text--bold payment-info__text card-info__number">4149-6293-5016-6898</p>
+                                    </li>
+                                    <li class="cards-info__item card-info">
+                                        <p class="text payment-info__text card-info__info">Карта ПриватБанк, грн</p>
+                                        <p class="caption-text text--bold payment-info__text card-info__number">5363-5420-1571-2970</p>
+                                    </li>
+                                    <li class="cards-info__item card-info">
+                                        <p class="text payment-info__text card-info__info">IBAN cчет ПриватБанк, грн</p>
+                                        <p class="caption-text text--bold payment-info__text card-info__number">UA403052990000026201661016707</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="owner-info">
+                                <p class="text payment-info__text owner-info__title">Получатель</p>
+                                <p class="caption-text text--bold payment-info__text owner-info__data">Возная Яна Сергеевна, мама Никиты</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="content__block contacts">
+            <div class="wrapper">
+                <a name="contacts">
+                    <div class="contacts__content">
+                        <h2 class="title-text contacts__title">Контактная информация</h2>
+                        <div class="content__wrapper contacts__data">
+                            <iframe class="contacts__video" src="https://www.facebook.com/plugins/video.php?height=476&amp;href=https%3A%2F%2Fwww.facebook.com%2Fyana.voznaya%2Fvideos%2F918499112071446%2F&amp;show_text=false&amp;width=476&amp;t=0"
+                                    width="476"
+                                    height="476"
+                                    style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+</div>
+
+<!--Library for zoom in images-->
+<script src="https://cdn.jsdelivr.net/npm/zoom-vanilla.js/dist/zoom-vanilla.min.js"></script>
+</body>
+</html>
