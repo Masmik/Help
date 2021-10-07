@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <title>Title</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,6 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/zoom-vanilla.js/dist/zoom.css" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/reset.css">
+    <script src="scripts/script.js"></script>
 </head>
 <body>
 <div class="page">
@@ -19,7 +21,21 @@
                 <aside class="header__aside">
                     <span class="header-text header__text--name">Никита Возный</span>
                 </aside>
-                <nav class="header__nav nav">
+                <div class="burger">
+                    <input class="burger__button" id="burger" type="checkbox"/>
+                    <label class="burger__label" for="burger">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                    </label>
+                    <nav class="nav">
+                        <a href="#diagnosis" class="header-text nav__item js-nav-link">Диагноз</a>
+                        <a href="#chronology" class="header-text nav__item js-nav-link">Хронология</a>
+                        <a href="#payment" class="header-text nav__item js-nav-link">Реквизиты</a>
+                        <a href="#contacts" class="header-text nav__item js-nav-link">Контактная информация</a>
+                    </nav>
+                </div>
+                <nav class="header-nav nav">
                     <a href="#diagnosis" class="header-text nav__item">Диагноз</a>
                     <a href="#chronology" class="header-text nav__item">Хронология</a>
                     <a href="#payment" class="header-text nav__item">Реквизиты</a>
@@ -112,7 +128,7 @@
                                         <p class="caption-text event__title">счет в больнице</p>
                                     </div>
                                     <div class="event__info">
-                                        <img src="./images/firs_bill.jpg" alt="First bill" srcset="./images/first_bill@2x.jpg 2x" class="event__image" data-action="zoom">
+                                        <img src="./images/first_bill.jpg" alt="First bill" srcset="./images/first_bill@2x.jpg 2x" class="event__image" data-action="zoom">
                                         <span class="text event__text">
                                             Мы прилетели в Турцию на обследование и сдали биоматериал для исследования.Нам сделали Мрт, ПЭТ обследование всего тела. Спасиба Богу метастаз во внутренних органах не обнаружили. Болезнь поразила Центральную нервную систему.
                                         </span>
@@ -159,7 +175,7 @@
                                         <span class="text event__text">
                                             Никитка продолжает свое лечение в стационаре клиники Memorial.Только что, нам выставили счет за 6 дней стационара и лечение.️Сумма составила 78686 лир.Это где-то 265 000,00 грн️В каком состоянии я сейчас нахожусь…
                                         </span>
-                                        <img src="./images/third_bill.jpg" alt="Third photo" srcset="./images/third_bill@2x.jpg 2x" class="event__image" data-action="zoom">
+                                        <img src="./images/third_bill.jpg" alt="Third bill" srcset="./images/third_bill@2x.jpg 2x" class="event__image event__image--separated" data-action="zoom">
                                         <p class="text event__text text--separated">
                                             Спасибо всем добрым и отзывчивым людям за помощь, репосты, молитвы. Здоровья Вам и вашим родным!
                                         </p>
@@ -239,9 +255,8 @@
                     <div class="contacts__content">
                         <h2 class="title-text contacts__title">Контактная информация</h2>
                         <div class="content__wrapper contacts__data">
-                            <iframe class="contacts__video" src="https://www.facebook.com/plugins/video.php?height=476&amp;href=https%3A%2F%2Fwww.facebook.com%2Fyana.voznaya%2Fvideos%2F918499112071446%2F&amp;show_text=false&amp;width=476&amp;t=0"
-                                    width="476"
-                                    height="476"
+                            <iframe class="contacts__video" src="https://www.facebook.com/plugins/video.php?height=476&amp;href=https%3A%2F%2Fwww.facebook.com%2Fyana.voznaya%2Fvideos%2F918499112071446%2F&amp;show_text=false&amp;width=860&amp;t=0"
+                                    width="860"
                                     style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowfullscreen>
                             </iframe>
                         </div>
@@ -251,7 +266,6 @@
         </div>
     </main>
 </div>
-
 <!--Library for zoom in images-->
 <script src="https://cdn.jsdelivr.net/npm/zoom-vanilla.js/dist/zoom-vanilla.min.js"></script>
 </body>
